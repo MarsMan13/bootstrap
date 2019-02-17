@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Release</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+    <script type='application/javascript' src='/path/to/fastclick.js'></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'main/index.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'main/rsop.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'main/project.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'main/recruiting.css' %}">
+
+    <style>
+      .body{
+        background-color: black;
+        color: white;
+      }
+    </style>
+</head>
+<body>
+    <nav class="bar navbar navbar-expand-lg navbar-light">
+        <a class="bar-logo" href="{%  url 'rsop' %}">
+            <img class="bar-logo-image" src="{% static 'release-white.png' %}">
+            <span class="bar-logo-text">RELEASE</span>
+        </a>
+    </nav>
+    <div class="container-fluid">
+        <div class="row rsop-row justify-content-center">
+            <div class="rsop-front col-11 col-md-8">
+                <h1 class="rsop-title"><span>Release</span> Summer of Projects 2018</h1>
+                <p class="rsop-subtitle">"컴공까지 왔는데 하고 싶은걸 해봐야지"</p>
+                <p class="rsop-copy">Release Summer of Projects 2018: 2달 동안 Release 부원들과 프로젝트를 진행하며 각종 세미나 및 중간 발표 행사, 모각코 행사에 참여하고 선후배들과 피드백을 주고받고 프로젝트를 발전시켜 나가보세요.</p>
+            </div>
+            <div class="rsop-back">
+                <img class="rsop-back-img" src="{% static 'rsop-background.jpg' %}">
+            </div>
+        </div>
+      </div>
+
+      <div class="container body ">
+    <div id="carouselContent" class="carousel slide" data-ride="carousel" data-interval="50000" style="heigth:500px;">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active text-center p-4">
+                <h2>We're Release</h2>
+                <h3>릴리즈는?</h3>
+                <p>Release는 학교 공부 외에 자기가 정말 하고 싶은 뭔가를 해보자는
+                 목적으로 설립된 프로젝트 중심의 학회입니다.</p>
+                <p>학회원끼리 정기적으로 &lt;Release&gt;세미나 행사를 열어 자신이 공부하는 내용이나
+                    진행중인 프로젝트 등을 공유하고, Release 내에서 팀을 꾸려 자유롭게 스터디 또는
+                    프로젝트를 진행하기도 합니다.
+                </p>
+                 <p>
+                    또한 초급자를 위한 C세미나, 선배님 초청 세미나, 기업 스폰서 해커톤 등 기타 활동도
+                    활발하게 이루어지고 있습니다.
+                </p>
+                 <h2>Why Release?</h2>
+                 <p>
+                Release는 자유로운 분위기에서의 자율적이고 능동적인 모든 활동을 권장합니다.
+
+                 </p>
+            </div>
+            <div class="carousel-item text-center p-4">
+
+                <p>2222</p>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+    </div>
+</div>
+
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+</body>
+</html>

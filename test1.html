@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    
+
+</head>
+<body>
+    <div class="container">
+        <div class="alert alert-warning alert-dismissible fade">
+            <strong>맙소사!</strong>
+            <button class="close" data-dismiss="alert">&times;</button>
+        </div>
+    
+       
+        <div>
+            <a href="#target" data-toggle="modal">open</a>
+            <div id="target" class="modal fade" aria-hidden="true">
+                <div class="modal-dialog">
+                
+                    Hello World
+                    <a href="#target" data-dismiss="modal">close</a>
+                </div>    
+            </div>
+            
+        </div>
+        
+        <div class="row"> 
+            <div class="col-md-12">
+                <div class="page-header">
+                    <h1>경로, 다이어로그</h1>
+                    <h2>다이어로그</h2>
+                </div>
+                <a href="#dialog" role="button" class="btn btn-default" data-toggle="modal">
+                    Show Dialog
+                </a> 
+                <div class="modal fade" id="dialog">
+                    <div class="modal-dialog">Hello
+                        <a href="#" role="button" class="btn btn-default" data-dismiss="modal">
+                                Close
+                        </a>
+                    </div>
+                    <!--
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="dlogLabel">  Dialog!
+                                </h4> 
+                            </div>
+                            <div class="modal-body">
+                                이것은 다이어로그의 메세지입니다.
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#" role="button" class="btn btn-default" data-dismiss="modal">
+                                Close
+                                </a> 
+                            </div> 
+                        </div> 
+                    </div>
+                    --> 
+                </div> 
+            </div> 
+        </div>
+
+
+       
+        
+    </div>
+    
+   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>
