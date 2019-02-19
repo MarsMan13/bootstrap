@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <button id="target1" type="button" class="btn btn-secondary">
+            버튼
+        </button>
+        <p id="target2" class="border border-black collapse">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, asperiores accusamus provident eaque fugit quis aperiam et, adipisci nihil. Voluptatibus, vitae fugiat atque iusto earum veritatis iure illo possimus consectetur.
+        </p>
+    </div>
+
+    <p>
+        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            href 링크
+        </a>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            data-target 버튼
+        </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세. 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 가을 하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <div>
+       <div>
+            <a data-toggle="collapse" data-target="#target" class="btn btn-primary text-white">
+                href 링크
+            </a>
+        </div>
+        <div class="collapse" id="target">
+            <div class="card card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora perspiciatis accusantium sapiente nulla veniam enim! Molestiae dolore autem ad magni deserunt voluptate, numquam ipsum perspiciatis, quia architecto, dicta quaerat eum.
+            </div>
+        </div>
+    </div>
+   
+    <script>
+        var target1 = document.getElementById('target1');
+        var target2 = document.getElementById('target2');
+
+
+        target1.addEventListener('click', function() {
+            $('#target2').toggleClass('collapse');
+            console.log("check");
+        })
+    </script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>
