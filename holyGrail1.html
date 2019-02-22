@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>holyGrail</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+
+        .header {
+            padding: 30px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .header h1 {
+            font-size: 50px;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .row::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #ddd;
+            margin-top: 20px;
+        }
+        
+        @media screen and (max-width: 800px){
+            .leftcolumn, .rightcolumn{
+                width: 100%;
+                padding: 0;
+            }
+        }
+        
+        @media screen and (max-width: 400px){
+            .topnav a{
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>My Website</h1>
+        <p>
+            My name is Gun Martthis Choi,<br>
+            I'm very handsome!
+        </p>
+    </div>
+    <div class="topnav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#" style="float:right;">Link</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Title Heading</h2>
+                <h5>- good thing is good -</h5>
+                <div class="fakeimg" style="height:200px;">
+                    <p>Some text..</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, possimus labore, minima dolorum esse dolor, quasi incidunt beatae aliquam consectetur delectus laboriosam magni vitae eum. Quis asperiores nobis, ratione rerum.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Title Heading</h2>
+                <h5>- good thing is good -</h5>
+                <div class="fakeimg" style="height:200px;">
+                    <p>Some text..</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, possimus labore, minima dolorum esse dolor, quasi incidunt beatae aliquam consectetur delectus laboriosam magni vitae eum. Quis asperiores nobis, ratione rerum.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Title Heading</h2>
+                <h5>- good thing is good -</h5>
+                <div class="fakeimg" style="height:200px;">
+                    <p>Some text..</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, possimus labore, minima dolorum esse dolor, quasi incidunt beatae aliquam consectetur delectus laboriosam magni vitae eum. Quis asperiores nobis, ratione rerum.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Title Heading</h2>
+                <h5>- good thing is good -</h5>
+                <div class="fakeimg" style="height:200px;">
+                    <p>Some text..</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, possimus labore, minima dolorum esse dolor, quasi incidunt beatae aliquam consectetur delectus laboriosam magni vitae eum. Quis asperiores nobis, ratione rerum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>Title Heading</h2>
+                <h5>- good thing is good -</h5>
+                <div class="fakeimg" style="height:100px;"></div>
+                <p>Some text..</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, possimus labore, minima dolorum esse dolor, quasi incidunt beatae aliquam consectetur delectus laboriosam magni vitae eum. Quis asperiores nobis, ratione rerum.</p>
+
+            </div>
+            <div class="card">
+                <h2>Title Heading</h2>
+                <h5>- good thing is good -</h5>
+                <div class="fakeimg" style="height:200px;">
+                </div>
+                <p>Some text..</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+</html>
