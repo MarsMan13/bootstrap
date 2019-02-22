@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transitions1</title>
+</head>
+
+<style>
+    #target{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        -webkit-transition: width 2s, height 7s;
+        transition: width 2s, height 7s;
+    }
+    
+    #target:hover{
+        width:300px;
+        height: 300px;
+    }
+    
+</style>
+
+<body>
+
+    <h1>The transition Property</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quia doloribus eos. Reprehenderit quibusdam laborum quas excepturi alias aut, nihil numquam neque provident quisquam officia dolore, aperiam, laboriosam deserunt nulla.
+    </p>
+
+    <div id="target"></div>
+
+    <p>
+        <b>Note: </b>
+        Tis example does not work in Internet Explorer 9 and earlier versions.
+    </p>
+
+</body>
+</html>

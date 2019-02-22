@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>responsiveImgGrid</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            font-family: Arial;
+        }
+        .header{
+            text-align: center;
+            padding: 32px;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+        .column{
+            flex: 24.99%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+        
+        .column img{
+            width:100%;
+            height: auto;
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+        @media (max-width: 800px){
+            .column{
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+        
+        @media (max-width: 600px){
+            .column{
+                flex:100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Responsive Image Grid</h1>
+        <p>Resize the browser window to see the responsive effect.</p>
+        
+        <div class="row">
+            <div class="column">
+                <img src="img/img_avatar3.png" alt="">
+                <img src="img/img_avatar3.png" alt="">
+                <img src="img/img_avatar3.png" alt="">
+                <img src="img/img_avatar3.png" alt="">
+                <img src="img/img_avatar3.png" alt="">
+                <img src="img/img_avatar3.png" alt="">
+            </div>
+            <div class="column">
+                <img src="img/test200.svg" alt="">
+                <img src="img/test200.svg" alt="">
+                <img src="img/test200.svg" alt="">
+                <img src="img/test200.svg" alt="">
+                <img src="img/test200.svg" alt="">
+                <img src="img/test200.svg" alt="">
+            </div>
+            <div class="column">
+                <img src="img/test400.svg" alt="">
+                <img src="img/test400.svg" alt="">
+                <img src="img/test400.svg" alt="">
+                <img src="img/test400.svg" alt="">
+                <img src="img/test400.svg" alt="">
+                <img src="img/test400.svg" alt="">
+            </div>
+            <div class="column">
+                <img src="img/img_avatar3.png" alt="">
+                <img src="img/img_avatar3.png" alt="">
+                <img src="img/img_avatar3.png" alt="">
+                <img src="img/img_avatar3.png" alt="">
+                <img src="img/img_avatar3.png" alt="">
+                <img src="img/img_avatar3.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

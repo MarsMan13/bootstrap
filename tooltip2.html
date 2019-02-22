@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tooltip2</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .tooltip{
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+        
+        .tooltip .tooltiptext{
+            display: none;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+            
+            position: absolute;
+            
+        }
+        
+        .tooltip:hover .tooltiptext{
+            display: inline;
+        }
+        
+    </style>
+</head>
+<body>
+   <div class="tooltip">
+       Hover over me
+       <span class="tooltiptext">Tooltip text</span>
+   </div>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transition2</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            -webkit-transition: width 3s;
+            transition: width 3s;
+            margin-bottom: 20px;
+        }
+
+        #target1 {
+            transition-timing-function: linear;
+        }
+
+        #target2 {
+            transition-timing-function: ease;
+        }
+
+        #target3 {
+            transition-timing-function: ease-in;
+        }
+
+        #target4 {
+            transition-timing-function: ease-out;
+        }
+
+        #target5 {
+            transition-timing-function: ease-in-out;
+        }
+
+        div:hover {
+            width: 500px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="target1">linear</div>
+    <div id="target2">ease</div>
+    <div id="target3">ease-in</div>
+    <div id="target4">ease-out</div>
+    <div id="target5">ease-in-out</div>
+</body>
+</html>
